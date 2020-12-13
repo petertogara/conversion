@@ -1,16 +1,20 @@
 package com.playsafe.conversion.dto.request;
 
-import lombok.Data;
-
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 
-
-@Data
+@NotNull(message = "Input to be converted is requiured")
 public class ConversionRequestDto {
 
-    @NotNull(message = "Input to be converted is requiured")
+
     @Digits(integer = 16, fraction = 2)
     private double inputToBeConverted;
 
+    public double getInputToBeConverted() {
+        return inputToBeConverted;
+    }
+
+    public void setInputToBeConverted(double inputToBeConverted) {
+        this.inputToBeConverted = inputToBeConverted;
+    }
 }
