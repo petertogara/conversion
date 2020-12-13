@@ -18,25 +18,25 @@ public class ConversionController {
     private ConversionService conversionService;
 
     @PostMapping("/ktoc")
-    public double kelvinToCelsius(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
-        return conversionService.kelvinToCelsius(conversionRequestDto.getInputToBeConverted());
+    public double convertKelvinToCelsius(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
+        return conversionService.convertKelvinToCelsius(conversionRequestDto.getInputToBeConverted());
     }
 
 
     @PostMapping("/ctok")
-    public double celsiusToKelvin(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
-        return conversionService.celsiusToKelvin(conversionRequestDto.getInputToBeConverted());
+    public double convertCelsiusToKelvin(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
+        return conversionService.convertCelsiusToKelvin(conversionRequestDto.getInputToBeConverted());
     }
 
     @PostMapping("/mtok")
-    public double milesToKilometers(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
-        return conversionService.milesToKilometers(conversionRequestDto.getInputToBeConverted());
+    public double convertMilesToKilometers(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
+        return conversionService.convertMilesToKilometers(conversionRequestDto.getInputToBeConverted());
     }
 
 
     @PostMapping("/ktom")
-    public double kilometersToMiles(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
-        return conversionService.kilometersToMiles(conversionRequestDto.getInputToBeConverted());
+    public double convertKilometersToMiles(@Valid @RequestBody ConversionRequestDto conversionRequestDto) {
+        return conversionService.convertKilometersToMiles(conversionRequestDto.getInputToBeConverted());
     }
 
 }

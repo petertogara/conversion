@@ -8,22 +8,22 @@ import org.springframework.stereotype.Service;
 public class ConversionServiceImpl implements ConversionService {
 
     @Override
-    public double kelvinToCelsius(double inputToBeConverted) {
+    public double convertKelvinToCelsius(double inputToBeConverted) {
         return inputToBeConverted - ConversionConstants.KELVIN_TO_CELCIOUS_RATE;
     }
 
     @Override
-    public double celsiusToKelvin(double inputToBeConverted) {
+    public double convertCelsiusToKelvin(double inputToBeConverted) {
         return inputToBeConverted + ConversionConstants.KELVIN_TO_CELCIOUS_RATE;
     }
 
     @Override
-    public double milesToKilometers(double inputToBeConverted) {
+    public double convertMilesToKilometers(double inputToBeConverted) {
         return inputToBeConverted * ConversionConstants.MILE_TO_KILOMETER_RATE;
     }
 
     @Override
-    public double kilometersToMiles(double inputToBeConverted) {
+    public double convertKilometersToMiles(double inputToBeConverted) {
         return inputToBeConverted * ConversionConstants.KILOMETER_TO_MILE_RATE;
     }
 }
