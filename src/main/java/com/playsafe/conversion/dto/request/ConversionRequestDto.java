@@ -3,10 +3,10 @@ package com.playsafe.conversion.dto.request;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 
-@NotNull(message = "Input to be converted is requiured")
 public class ConversionRequestDto {
 
 
+    @NotNull
     @Digits(integer = 16, fraction = 2)
     private double inputToBeConverted;
 
