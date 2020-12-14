@@ -6,10 +6,10 @@
 
 ## The ends points functions
 
-- /conversions/ktoc ### This endpoint accepts a kevin amount to be converted to celcius
+- /conversions/ktoc -- This endpoint accepts a kevin amount to be converted to celcius
 
-- /conversions/ctok ## This endpoint accepts a celcius amount to be converted to kevin
+- /conversions/ctok -- This endpoint accepts a celcius amount to be converted to kevin
 
-- /conversions/mtok ### This endpoint accepts a miles input to be converted to kilometers
+- /conversions/mtok -- This endpoint accepts a miles input to be converted to kilometers
 
-- /conversions/ktom ### This endpoint accepts a kilometers input to be converted to miles
+- /conversions/ktom -- This endpoint accepts a kilometers input to be converted to miles
